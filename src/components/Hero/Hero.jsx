@@ -4,7 +4,7 @@ import './Hero.css';
 import hero_image from '../../assets/hero_image.png';
 import hero_image_back from "../../assets/hero_image_back.png";
 import Cuore from "../../assets/heart.png"
-import Calories from "../../assets/calories.png"
+import Calorie from "../../assets/calories.png"
  
 const Hero = () => {
   return (
@@ -64,7 +64,21 @@ const Hero = () => {
       
       <div className="heart-rate">
         <img src={Cuore} alt="" />
-        <span>Heart Rate</span><span>100 bpm</span>
+        <span>Battito cardiaco</span><span>100 bpm</span>
+      </div>
+
+
+      {/* immagini hero */}
+      <img src={hero_image} alt="" className="hero-image"/>
+      <img src={hero_image_back} alt="" className="hero-image-back"/>
+
+      {/*calorie*/}
+      <div className="calorie">
+        <img src={Calorie} alt="" />
+        <div>
+          <span>Calories burned</span>
+          <span>218 kcal</span>
+        </div>
       </div>
     </div>
   </div>
